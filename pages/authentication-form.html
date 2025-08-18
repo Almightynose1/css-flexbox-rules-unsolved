@@ -45,6 +45,7 @@
               id="password-field"
               placeholder="passwords must match"
               minlength="8"
+              maxlength="20"
               required
             />
           </div>
@@ -116,6 +117,8 @@
               minlength="12"
               maxlength="12"
               placeholder="ex.: +12336456355"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             />
           </div>
           <div class="form-input-control">
@@ -125,7 +128,7 @@
           <div class="form-group-horizontal-control">
             <div class="form-input-control">
               <label for="state">State</label>
-              <select id="state">
+              <select id="state" required>
                 <option value="" disabled selected>Select your state</option>
                 <option value="TX">Texas</option>
                 <option value="IA">Iowa</option>
@@ -134,7 +137,7 @@
             </div>
             <div class="form-input-control">
               <label for="city">City</label>
-              <select id="city">
+              <select id="city" required>
                 <option value="" disabled selected>Select your city</option>
                 <option value="new-york">New York</option>
                 <option value="washington">Washington DC</option>
