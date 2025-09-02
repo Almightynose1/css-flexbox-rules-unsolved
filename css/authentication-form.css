@@ -14,7 +14,6 @@ body {
   display: flex;
   gap: 40px;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 30px;
 }
 
@@ -66,6 +65,20 @@ p {
 
 .form-submit-control input[type="submit"]:hover {
   background-color: #294bbb;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#sign-in form,
+#sign-up form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* 30px between rows */
 }
 
 .form-row {
